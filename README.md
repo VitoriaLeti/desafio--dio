@@ -32,6 +32,7 @@ O objetivo é aplicar os conhecimentos adquiridos durante o curso e demonstrar h
      cd desafio-dio
      
 4. Execute o script Python:
+   
    python desafio.py
 
 
