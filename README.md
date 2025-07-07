@@ -1,38 +1,36 @@
 # 💰 Sistema Bancário - Desafio DIO 💻
 
-Este repositório contém um sistema bancário desenvolvido como parte do desafio do curso de Backend em Python promovido pelo Santander em parceria com a DIO.
+Este repositório contém um sistema bancário desenvolvido como parte do desafio do curso de **Backend em Python** promovido pelo **Santander** em parceria com a **DIO (Digital Innovation One)**.
 
-## 📝 Descrição
+## 🧱 Estrutura de Classes
 
-O projeto implementa funcionalidades básicas de um sistema bancário, incluindo:
-- 🏦 Criação de conta
-- 💸 Depósito
-- 🏧 Saque
-- 📊 Consulta de saldo
-- 📜 Extrato
-- 📋 Listar contas
-- 👤 Novo usuário
-- 🚪 Sair
+- `Cliente`: Classe base para clientes, com endereço e contas.
+- `PessoaFisica`: Herda de `Cliente`, adiciona nome, CPF e data de nascimento.
+- `Conta`: Classe base para contas bancárias, com saldo, número, agência e histórico.
+- `ContaCorrente`: Herda de `Conta`, com limites de saque e número máximo de saques.
+- `Transacao`: Classe abstrata para operações bancárias.
+  - `Saque` e `Deposito`: Implementações concretas de `Transacao`.
+- `Historico`: Armazena todas as transações realizadas em uma conta.
 
-O objetivo é aplicar os conhecimentos adquiridos durante o curso e demonstrar habilidades em desenvolvimento backend utilizando Python.
+## ⚙️ Funcionalidades
 
-## 📂 Estrutura do Repositório
-
-- `desafio.py`: Arquivo principal com o código fonte do sistema bancário.
-- `README.md`: Este arquivo, fornecendo uma visão geral do projeto e instruções para execução.
+- Criar clientes e contas.
+- Realizar depósitos e saques com validações.
+- Registrar transações com data e tipo.
+- Limitar número de saques e valor máximo por saque.
+- Histórico de transações por conta.
 
 ## 🚀 Como Executar
 
-1. Clone este repositório:
+1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/desafio-dio.git
-        
+   git clone https://github.com/VitoriaLeti/desafio--dio.git
+   cd desafio--dio
    ```
-  2. Navegue até o diretório do projeto:
-     cd desafio-dio
-     
-4. Execute o script Python:
-   
-   python desafio.py
+2.Execute o script principal:
+
+python desafio.py
+
+
 
 
